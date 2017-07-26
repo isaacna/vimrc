@@ -7,3 +7,4 @@ set number
 set showcmd
 set cursorline
 set showmatch
+colorscheme solarized
