@@ -8,3 +8,5 @@ set showcmd
 set cursorline
 set showmatch
 colorscheme solarized
+set background:dark
+let g:solarized_termcolors=256
