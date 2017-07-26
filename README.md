@@ -1,2 +1,2 @@
-# dailyfeed.py
+# .vimrc
 Vim configurations and color scheme
