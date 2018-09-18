@@ -11,12 +11,14 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
+Plugin 'https://github.com/danro/rename.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 " NERDTree on startup
 autocmd vimenter * NERDTree
+autocmd vimenter * if !argc() | NERDTree | endif
 
 inoremap jk <ESC>
 set background=dark
@@ -37,3 +39,8 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" replace word with yanked word
+:map <C-Y> cw<C-r>0<ESC>
+
+
