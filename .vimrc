@@ -12,13 +12,15 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'https://github.com/danro/rename.vim'
+Plugin 'https://github.com/lervag/vimtex.git'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 " NERDTree on startup
-autocmd vimenter * NERDTree
-autocmd vimenter * if !argc() | NERDTree | endif
+"autocmd vimenter * NERDTree
+"autocmd vimenter * if !argc() | NERDTree | endif
 
 inoremap jk <ESC>
 set background=dark
@@ -33,6 +35,7 @@ set t_Co=256
 let g:solarized_termcolors=256
 colorscheme solarized
 set wildmode=full "tab completion 
+set foldmethod=indent
 
 "easier window switching
 nnoremap <C-J> <C-W><C-J>
