@@ -36,6 +36,10 @@ let g:solarized_termcolors=256
 colorscheme solarized
 set wildmode=full "tab completion 
 set foldmethod=indent
+set foldlevel=99
+        
+autocmd BufRead,BufNewFile *.tex
+    \ setlocal background=light 
 
 "easier window switching
 nnoremap <C-J> <C-W><C-J>
