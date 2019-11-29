@@ -1,4 +1,5 @@
 set nocompatible              " be iMproved, required
+set mouse=a
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -23,7 +24,6 @@ filetype plugin indent on    " required
 "autocmd vimenter * if !argc() | NERDTree | endif
 
 inoremap jk <ESC>
-set background=dark
 syntax enable
 set encoding=utf-8
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
@@ -31,9 +31,11 @@ set number
 set showcmd
 set cursorline
 set showmatch
-set t_Co=256
+"set t_Co=256
 let g:solarized_termcolors=256
+set background=dark
 colorscheme solarized
+colorscheme darcula
 set wildmode=full "tab completion 
 set foldmethod=indent
 set foldlevel=99
