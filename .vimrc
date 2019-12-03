@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved, required
 set mouse=a
 filetype off                  " required
+autocmd BufWritePre * :%s/\s\+$//e
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -36,12 +37,12 @@ let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 colorscheme darcula
-set wildmode=full "tab completion 
+set wildmode=full "tab completion
 set foldmethod=indent
 set foldlevel=99
-        
+
 autocmd BufRead,BufNewFile *.tex
-    \ setlocal background=light 
+    \ setlocal background=light
 
 "easier window switching
 nnoremap <C-J> <C-W><C-J>
